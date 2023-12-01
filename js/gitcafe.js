@@ -13,7 +13,7 @@ var rule = {
     class_url:'hyds&rhds&omds&qtds&hydy&rhdy&omdy&qtdy&hydm&rhdm&omdm&jlp&zyp&hyyy&rhyy&omyy&qtyy',
     play_parse:true,
     lazy:`js:
-    input = alistPlay(input)
+    input = alistPlay(input,playObj.flag)
     `,
     limit:5,
     推荐:`js:
