@@ -64,26 +64,5 @@ var rule = {
             VOD = vod;
         }
     `,
-    /**
-     * 搜索解析 过滤部分资源
-     */
-    // 搜索: 'json:list;vod_name;vod_pic;vod_remarks;vod_id',
-    搜索: `js:
-        let d = [];
-        // 忽略分类
-        let cate_exclude = '34,35,45';
-        let html = request(input);
-        let list = JSON.parse(html).list;
-        list.forEach(function (it){
-            if(!cate_exclude.match(it.type_id)){
-                d.push({
-                    title:it.vod_name,
-                    img:it.vod_pic,
-                    desc:it.vod_remarks,
-                    url:it.vod_id
-                });
-            }
-        });
-        setResult(d);
-    `,
+    搜索: 'json:list;vod_name;vod_pic;vod_remarks;vod_id'
 }
