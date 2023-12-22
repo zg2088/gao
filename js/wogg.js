@@ -8,7 +8,7 @@ var rule={
     filter: {},
     searchUrl:'/index.php/vodsearch/**-------------.html',
     searchable:2,
-    class_parse: 'ul.nav-menu-items&&li;a&&Text;a&&href;/(\\d+).html',
+    class_parse: 'ul.nav-menu-items&&li.nav-menu-item;a&&Text;a&&href;/(\\d+).html',
     推荐:'.module-list;.module-items&&.module-item;*;*;*;*',
     double:true,
     一级:'.module-list&&.module-items&&.module-item;.module-item-cover&&.module-item-pic&&a&&title;.module-item-cover&&.module-item-pic&&img&&data-src;.module-item-text&&Text;.module-item-cover&&.module-item-pic&&a&&href',
