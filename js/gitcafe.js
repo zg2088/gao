@@ -85,6 +85,7 @@ var rule = {
         let alistVod = alistDetailContent(vod ,[input]);
         TABS = alistVod.tabs
         LISTS = alistVod.lists
+        detailError = alistVod.error
         vod["vod_play_from"]=alistVod.tabs.join("$$$");
 
         for (var i in LISTS) {
