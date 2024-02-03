@@ -3,8 +3,8 @@ var rule={
     模板:'AlistShare',
     host:'https://wogg.xyz',
     headers:{
-        'Cookie':'
-_ga=GA1.1.1243752718.1703129426; cf_clearance=HH1VuOnnRcxUYXGl_CxM..G40hgaS0a26xpgh1HAGgM-1706421052-1-AR+Ty22GQ7MQMLHGm2LAcC7lzSmRLO+0a3JB80B21dwbkRyFm5Isyt7YNO7du2Nk66U2APFoC91lYxLKN6xLwy0=; closeclick=closeclick;'
+        'Cookie':'_ga=GA1.1.1243752718.1703129426; cf_clearance=HH1VuOnnRcxUYXGl_CxM..G40hgaS0a26xpgh1HAGgM-1706421052-1-AR+Ty22GQ7MQMLHGm2LAcC7lzSmRLO+0a3JB80B21dwbkRyFm5Isyt7YNO7du2Nk66U2APFoC91lYxLKN6xLwy0=; closeclick=closeclick;',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     },
     url:'/index.php/vodshow/fyclass--------fypage---.html',
     filterable:0,//是否启用分类筛选,
