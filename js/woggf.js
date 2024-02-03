@@ -3,7 +3,7 @@ var rule={
     模板:'AlistShare',
     host:'https://wogg.xyz',
     headers:{
-        'Cookie':'_ga=GA1.1.1243752718.1703129426; cf_clearance=HH1VuOnnRcxUYXGl_CxM..G40hgaS0a26xpgh1HAGgM-1706421052-1-AR+Ty22GQ7MQMLHGm2LAcC7lzSmRLO+0a3JB80B21dwbkRyFm5Isyt7YNO7du2Nk66U2APFoC91lYxLKN6xLwy0=; closeclick=closeclick;',
+        'Cookie':'_ga=GA1.1.1243752718.1703129426; cf_clearance=P1SvkppS.8BuVJy6sSRiZgrL.8BkGFiBLxvT0i9yG1s-1706945476-1-AaRC/Cz6wTP+hMEVkJAp+W5VYcBmgMAjuTr1yLjGUbOQEjkM09WVLEAgPmgbARjdR10P/Ni6yYn4QdVil2C0EzQ=; _ga_JSCFX80PZS=GS1.1.1706945477.5.0.1706945477.0.0.0',
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     },
     url:'/index.php/vodshow/fyclass--------fypage---.html',
