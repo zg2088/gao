@@ -3,8 +3,9 @@
 {"key":"drpy_js_直播大全","name":"电视 | 直播大全","protocol":"IPTV","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/gitbox520/gao/master/js/live2mv_data1.json"},
 {"key":"drpy_js_Alist","name":"网盘 | Alist","protocol":"Alist","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/gaotianliuyun/gao/master/js/alist.json"},
   
-{"key":"drpy_js_woggxyz","name":"Ali | 玩偶哥哥","protocol":"DRPY_Crack","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/gitbox520/gao/master/js/woggxyz.js","searchable":1},
-{"key":"drpy_js_wogg","name":"Ali | 玩偶哥哥[备]","protocol":"DRPY_Crack","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/gitbox520/gao/master/js/wogg.js","searchable":0},
+{"key":"drpy_js_wogg","name":"Ali | 玩偶哥哥","protocol":"DRPY_Crack","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/gitbox520/gao/master/js/wogg.js","searchable":1},
+{"key":"drpy_js_woggxyz","name":"Ali | 玩偶哥哥[xyz]","protocol":"DRPY_Crack","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/gitbox520/gao/master/js/woggxyz.js","searchable":0},
+{"key":"drpy_js_woggxo","name":"Ali | 玩偶哥哥[xo]","protocol":"DRPY_Crack","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/gitbox520/gao/master/js/woggxo.js","searchable":0},
 {"key":"drpy_js_wobg","name":"Ali | 玩偶表哥","protocol":"DRPY_Crack","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/gitbox520/gao/master/js/wobg.js","searchable":1},
 {"key":"drpy_js_tudou","name":"Ali | 土豆阿里资源站","protocol":"DRPY_Crack","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/gitbox520/gao/master/js/lvdoui.js","searchable":1},
 {"key":"drpy_js_ttkx","name":"Ali | 玩我哥哥","protocol":"DRPY_Crack","ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/gitbox520/gao/master/js/ttkx.js","searchable":1},
