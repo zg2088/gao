@@ -25,12 +25,12 @@ var rule={
        let patternAli = new RegExp('(https:\\/\\/www\.alipan\.com\\/s\\/[^"]+)|(https:\\/\\/www\.aliyundrive\.com\\/s\\/[^"]+)', 'g');
        let matches = html.match(patternAli);
 
-       initAlistShare();
-       let alistVod = alistDetailContent(vod ,matches);
-       TABS = alistVod.tabs
-       LISTS = alistVod.lists
-       detailError = alistVod.error
-       vod["vod_play_from"]=alistVod.tabs.join("$$$");
+       initPan();
+       let panVod = panDetailContent(vod ,matches);
+       TABS = panVod.tabs
+       LISTS = panVod.lists
+       detailError = panVod.error
+       vod["vod_play_from"]=panVod.tabs.join("$$$");
 
        for (var i in LISTS) {
            if (LISTS.hasOwnProperty(i)) {
