@@ -24,7 +24,9 @@ var rule = {
             jx: 0
         }
     }],
-    lazy: '',
+	lazy:`js:
+	input = panPlay(input,playObj.flag)
+	`,
     limit: 6,
     推荐: 'div.clear:gt(1):has(img);.entry-title&&Text;img&&src;;a&&href',
     一级: 'div.clear:gt(1):has(img);.entry-title&&Text;img&&src;;a&&href',
@@ -38,105 +40,23 @@ var rule = {
         pd = jsp.pd;
 TABS=[]
 let d = pdfa(html, 'fieldset p a');
-let tabsa = [];
-let tabsq = [];
-let tabsm = false;
-let tabse = false;
+let listurl = [];
 d.forEach(function(it) {
 	let burl = pdfh(it, 'a&&href');
 	if (burl.startsWith("https://www.aliyundrive.com/s/") || burl.startsWith("https://www.alipan.com/s/")){
-		tabsa.push("阿里雲盤");
+		listurl.push(burl);
 	}else if (burl.startsWith("https://pan.quark.cn/s/")){
-		tabsq.push("夸克網盤");
-	}else if (burl.startsWith("magnet")){
-		tabsm = true;
-	}else if (burl.startsWith("ed2k")){
-		tabse = true;
+		listurl.push(burl);
 	}
 });
-if (tabsm === true){
-	TABS.push("磁力");
+if (listurl.length){
+	initPan();
+	let alistVod = panDetailContent(vod ,listurl);
+	TABS = alistVod.tabs
+	LISTS = alistVod.lists
+	detailError = alistVod.error
 }
-if (tabse === true){
-	TABS.push("電驢");
-}
-if (false && tabsa.length + tabsq.length > 1){
-	TABS.push("選擇右側綫路");
-}
-let tmpIndex;
-tmpIndex=1;
-tabsa.forEach(function(it){
-	TABS.push(it + tmpIndex);
-	tmpIndex = tmpIndex + 1;
-});
-tmpIndex=1;
-tabsq.forEach(function(it){
-	TABS.push(it + tmpIndex);
-	tmpIndex = tmpIndex + 1;
-});
-log('xzys TABS >>>>>>>>>>>>>>>>>>' + TABS);`,
-lists: `js: log(TABS);
-pdfh = jsp.pdfh;
-pdfa = jsp.pdfa;
-pd = jsp.pd;
-LISTS = [];
-let d = pdfa(html, 'fieldset p a');
-let lista = [];
-let listq = [];
-let listm = [];
-let liste = [];
-d.forEach(function(it){
-	let burl = pdfh(it, 'a&&href');
-	let title = pdfh(it, 'a&&Text');
-	log('dygang title >>>>>>>>>>>>>>>>>>>>>>>>>>' + title);
-	log('dygang burl >>>>>>>>>>>>>>>>>>>>>>>>>>' + burl);
-	let loopresult = title + '$' + burl;
-	if (burl.startsWith("https://www.aliyundrive.com/s/") || burl.startsWith("https://www.alipan.com/s/")){
-		if (true){
-		if (TABS.length==1){
-			burl = "http://127.0.0.1:9978/proxy?do=ali&type=push&confirm=0&url=" + encodeURIComponent(burl);
-		}else{
-			burl = "http://127.0.0.1:9978/proxy?do=ali&type=push&url=" + encodeURIComponent(burl);
-		}
-		}else{
-			burl = "push://" + burl;
-		}
-		loopresult = title + '$' + burl;
-		lista.push(loopresult);
-	}else if (burl.startsWith("https://pan.quark.cn/s/")){
-		if (true){
-		if (TABS.length==1){
-			burl = "http://127.0.0.1:9978/proxy?do=quark&type=push&confirm=0&url=" + encodeURIComponent(burl);
-		}else{
-			burl = "http://127.0.0.1:9978/proxy?do=quark&type=push&url=" + encodeURIComponent(burl);
-		}
-		}else{
-                        burl = "push://" + burl;
-                }
-		loopresult = title + '$' + burl;
-		listq.push(loopresult);
-	}else if (burl.startsWith("magnet")){
-		listm.push(loopresult);
-	}else if (burl.startsWith("ed2k")){
-		liste.push(loopresult);
-	}
-});
-if (listm.length>0){
-	LISTS.push(listm);
-}
-if (liste.length>0){
-	LISTS.push(liste);
-}
-if (false && lista.length + listq.length > 1){
-	LISTS.push(["選擇右側綫路，或3秒後自動跳過$http://127.0.0.1:10079/delay/"]);
-}
-lista.forEach(function(it){
-	LISTS.push([it]);
-});
-listq.forEach(function(it){
-	LISTS.push([it]);
-
-});`,
-
-}, 搜索: 'div.clear:gt(0):has(img);img&&alt;img&&data-src;;a&&href',
+`,
+lists: `js:`,
+}, 搜索: 'div.clear:gt(0):has(img);img&&alt;img&&src;;a&&href',
 }
