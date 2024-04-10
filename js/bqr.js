@@ -62,7 +62,7 @@ var rule = {
 			return videos;
 		}
 		const tid = "";
-		let pg = 1;
+		let pg = MY_PAGE;
 		let url = rule.homeUrl + '/api/busi/res/list?typeId=' + MY_CATE + '&source=ALI_WP&q=&statuses=PUBLISH&statuses=INVALID&orderBy2=&pageSize=25&pageNum=' + pg + '&total=0&_t=' + new Date().getTime();
 		let html = request(url);
 		let resp = JSON.parse(html);
@@ -119,7 +119,7 @@ var rule = {
 		return videos;
 	}
 	const tid = "";
-	let pg = 1;
+	let pg = MY_PAGE;
 	let url = rule.homeUrl + '/api/busi/res/list?source=&q=' + KEY + '&statuses=PUBLISH&statuses=INVALID&orderBy2=newest&pageSize=25&pageNum=' + pg + '&total=0&_t=' + new Date().getTime();
 	let html = request(url);
 	let resp = JSON.parse(html);
