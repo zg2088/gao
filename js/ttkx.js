@@ -17,6 +17,8 @@ var rule={
         "img": ".video-cover img&&data-src",
         "desc": ".module-row-title&&p&&Text;.video-info-main&&.video-info-item:eq(2) a&&Text;.video-info-aux a:eq(3)&&Text;.video-info-main&&.video-info-item:eq(1)&&Text;.video-info-main&&.video-info-item:eq(0)&&Text",
         "content": ".sqjj_a&&Text",
+        "panarray": "div.scroll-box-y&&.module-row-title",
+        "panhref": "p&&Text",
     },
     搜索:'.module-search-item;h3&&Text;*;.video-serial&&Text;.video-info-header&&h3&&a&&href',
 }
