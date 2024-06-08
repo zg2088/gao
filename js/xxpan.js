@@ -6,6 +6,11 @@ var rule = {
     searchUrl:'/page/fypage?s=**',
     searchable:1,
     filterable:1,
+	headers:{
+		'User-Agent': PC_UA,
+		'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+		'Referer': ''
+	},
     quickSearch:0,
     timeout:30000,
     class_name:'影视天地&动漫天地&阿里云盘&夸克网盘&移动云盘&百度网盘&迅雷云盘&UC网盘',
