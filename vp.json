@@ -38,7 +38,7 @@
 {"key":"drpy_js_私人影院","name":"影视 | 私人影院","protocol":"DRPY_Crack","ext":"https://gaotianliuyun.github.io/gao/js/私人影院.js","searchable":1},
 {"key":"drpy_js_小狗影院","name":"影视 | 小狗影院","protocol":"DRPY_Crack","ext":"https://gaotianliuyun.github.io/gao/js/小狗影院.js","searchable":1},
   
-{"key":"drpy_js_欧乐影院[飞]","name":"起飞 | 欧乐影院","protocol":"DRPY_Crack","ext":"https://gaotianliuyun.github.io/gao/js/欧乐影院[飞].js","searchable":1},
+{"key":"drpy_js_欧乐影院[飞]","name":"起飞 | 欧乐影院","protocol":"DRPY_Crack","ext":"https://gitbox520.github.io/gao/js/欧乐影院[飞].js","searchable":1},
 {"key":"drpy_js_大师兄影视1","name":"起飞 | 大师兄影视","protocol":"DRPY_Crack","ext":"https://gaotianliuyun.github.io/gao/js/大师兄影视.js","searchable":1},
 {"key":"drpy_js_胖虎","name":"起飞 | 胖虎","protocol":"DRPY_Crack","ext":"https://gaotianliuyun.github.io/gao/js/胖虎.js","searchable":1},
 {"key":"drpy_js_if101[飞]","name":"起飞 | if101✈️","protocol":"DRPY_Crack","ext":"https://gaotianliuyun.github.io/gao/js/if101[飞].js","searchable":1},
@@ -50,6 +50,7 @@
 {"key":"drpy_js_欧帝影院","name":"影视 | 欧帝影院","protocol":"DRPY_Crack","ext":"https://gaotianliuyun.github.io/gao/js/欧帝影院.js","searchable":1},
 {"key":"drpy_js_追剧迷","name":"影视 | 追剧迷","protocol":"DRPY_Crack","ext":"https://gaotianliuyun.github.io/gao/js/追剧迷.js","searchable":1},
 
+{"key":"黑木耳","name":"🐝黑木耳","protocol": "VOD","ext":"https://www.heimuer.tv/api.php/provide/vod/","searchable":1},
 {"key":"非凡采集","name":"🐝非凡采集","protocol": "VOD","ext":"https://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/","searchable":1},
 {"key":"火狐采集","name":"🐝火狐采集","protocol": "VOD","ext":"https://hhzyapi.com/api.php/provide/vod/from/hhm3u8/","searchable":1},
 {"key":"量子采集","name":"🐝量子采集","protocol": "VOD","ext":"https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8/","searchable":1},
@@ -83,4 +84,4 @@
 {"key":"drpy_js_酷6网","name":"聚合 | 酷6网","protocol":"DRPY_Crack","ext":"https://gaotianliuyun.github.io/gao/js/酷6网.js","searchable":1},
 {"key":"drpy_js_A8音乐","name":"MV | A8音乐","protocol":"DRPY_Crack","ext":"https://gaotianliuyun.github.io/gao/js/A8音乐.js","searchable":1}
 ],
-"extensions":["https://gitbox520.github.io/gao/lib/DRPY.zip?v13","https://gitbox520.github.io/gao/lib/IPTV.zip?v2","https://gitbox520.github.io/gao/lib/Alist_Ya.zip?v9","https://gitbox520.github.io/gao/lib/APPYS.zip?v1","https://file.cubeplayer.top/Alist.zip?v=5","https://file.cubeplayer.top/Alist_VOD.zip?v=5"]}
+"extensions":["https://gitbox520.github.io/gao/lib/DRPY.zip?v14","https://gitbox520.github.io/gao/lib/IPTV.zip?v2","https://gitbox520.github.io/gao/lib/Alist_Ya.zip?v10","https://gitbox520.github.io/gao/lib/APPYS.zip?v1","https://file.cubeplayer.top/Alist.zip?v=5","https://file.cubeplayer.top/Alist_VOD.zip?v=6"]}
